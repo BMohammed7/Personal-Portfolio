@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> <!-- https://ionic.io/ionicons -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@mariohamann/activity-graph/dist/activity-graph.min.js"></script>
+  <title>My Blog</title>
+
+  </head>
+  <body class="">
+
+      <div class="container">
+
+<!-- ------- Navbar ------- -->
+
+          <nav class="navbar">
+            <div class="box theme">
+              <div class="item" onclick="theme()">
+                <ion-icon id="lightBtn" name="sunny-outline"></ion-icon>
+                <ion-icon id="darkBtn"name="moon-outline" style="display: none;"></ion-icon>
+              </div>
+            </div>
+            <div class="box nav">
+              <div class="item active">
+                <a href="index.html#about">
+                  <ion-icon name="person-circle-outline"></ion-icon>
+                  <p>about</p>
+                  </a>
+                <div class="divider rtl"></div>
+              </div>
+              <div class="item">
+                <a href="index.html#resume ">
+                  <ion-icon name="file-tray-full-outline"></ion-icon>
+                  <p>resume</p>
+                </a>
+                <div class="divider rtl"></div>
+              </div>
+              <div class="item">
+                <a href="index.html#projects">
+                  <ion-icon name="layers-outline"></ion-icon>
+                  <p>projects</p>
+                  </a>
+                <div class="divider rtl"></div>
+              </div>
+              <div class="item ">
+                <a href="index.html#blogs">
+                  <ion-icon name="reader-outline"></ion-icon>
+                  <p>blogs</p>
+                  </a>
+                <div class="divider rtl"></div>
+              </div>
+              <div class="item">
+                <a href="index.html#contact">
+                  <ion-icon name="paper-plane-outline"></ion-icon>
+                  <p>contact</p>
+                  </a>
+                <div class="divider rtl"></div>
+              </div>
+            </div>
+          </nav>
+
+          <!-- ----------- Profile --------- -->
+          
+          <div class="box profile">
+            <img class="header" src="cover.jpg" alt="Cover Image">
+            <img class="img" src="profile.jpeg" alt="Profile Picture">
+            <h2>Burhanuddin Mohammed</h2>
+            <p id="typed" class="colored">Full-Stack Web Developer</p> 
+            <ul>
+              <li><a href="https://github.com/BMohammed7" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
+              <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+              <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+              <li><a href="http://www.linkedin.com/in/burhanuddin-mohammed-1785bb35b" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            </ul>
+            <div class="footer">
+              <div class="divider rtl"></div>
+              <table>
+                <tr>
+                  <td><a href="#">My Resume <ion-icon name="file-tray-full-outline"></ion-icon></a></td>
+                  <td><a href="#contact">Contact Me <ion-icon name="call-outline"></ion-icon></a></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <!-- -------- content -------- -->
+
+          <div class="box content">
+            <div class="wrapper">
+            <h1 id="about">From Passion <span class="colored">to Pitch</span></h1>
+          <div class="divider ltr"></div>
+
+          <h2>Co-Founding a Community Soccer League</h2><br>
+
+          <h3>How It Started</h3>
+          <p>
+            Last year, I co-founded something that had nothing to do with lines of code — but everything to do with <strong>leadership, teamwork, and giving back</strong>.
+            Alongside <strong>my brother and his friend</strong>, we launched our own <strong>community soccer league</strong> for local youth.
+          </p>
+          <p>
+            The idea came from a simple goal: give kids in our neighborhood a structured, exciting way to stay active and have fun during the summer.
+            We started with limited equipment, a few connections, and a lot of ambition.
+          </p><br>
+
+          <h3>The First Year: Learning As We Played</h3>
+          <p>
+            Our inaugural season was in the summer of 2024. We hosted both <strong>Junior (Grades 1–6)</strong> and <strong>Senior (Grades 7–12)</strong> divisions. 
+            About 50 to 60 kids signed up, and while turnout wasn’t massive, the energy on the field was unforgettable.
+          </p>
+          <p>
+            We secured a few small sponsors, organized game schedules, set up volunteer referees, and coordinated with parents — all while balancing our own studies and responsibilities.
+          </p>
+          <p>
+            It was far from perfect, but it was a start. And the impact was real: kids found community, parents expressed gratitude, and we got excited to grow it further.
+          </p><br>
+
+          <h3>Leveling Up: Summer 2025 Plans</h3>
+          <p>
+            After a year of learning what worked (and what didn’t), we doubled down on our mission. 
+            This year’s league — running <strong>July 11, 12, and 13</strong> — is already shaping up to be much bigger and better.
+          </p>
+          <p>
+            Here’s what’s changed:
+          </p>
+          <ul>
+            <li>💬 <strong>Improved Marketing:</strong> We promoted through social media, community boards, and schools</li>
+            <li>⚽ <strong>Over 200 Registered Participants:</strong> Up from ~60 last year — 3x growth</li>
+            <li>🤝 <strong>New Sponsors:</strong> We secured support from local businesses, boosting our resources and prizes</li>
+          </ul>
+          <p>
+            Due to overwhelming demand and limited volunteer resources, we decided to focus solely on the <strong>Junior Division (Grades 1–6)</strong> this July.
+            But we’re actively planning to bring back the <strong>Senior Division (Grades 7–12)</strong> later this summer.
+          </p><br>
+
+          <h3>What I Learned as a Co-Founder</h3>
+          <p>
+            Organizing a community sports league may not involve software, but it has taught me just as much about engineering — especially the human kind:
+          </p>
+          <ul>
+            <li><strong>Project Management:</strong> Scheduling games, teams, volunteers, and venues all required careful planning</li>
+            <li><strong>Team Leadership:</strong> Delegating roles, solving conflicts, and motivating others taught me to lead under pressure</li>
+            <li><strong>Adaptability:</strong> Weather changes, last-minute dropouts, or field conflicts — we handled them all in real time</li>
+            <li><strong>Community Impact:</strong> Seeing the joy on kids’ faces made the long hours worth it. That’s the kind of work that stays with you</li>
+          </ul><br>
+
+          <h3>Looking Ahead</h3>
+          <p>
+            Our dream is to make this an <strong>annual community event</strong> that brings together families, kids, and local leaders through sport.
+            We want to offer mentorship, coaching, and even scholarships in future editions.
+          </p>
+          <p>
+            Personally, this experience showed me that <strong>leadership isn’t limited to a profession — it’s about action</strong>. 
+            Whether I'm building an app or organizing a soccer league, I want to keep creating things that bring people together.
+          </p><br>
+
+          <h2>Final Thoughts</h2>
+          <p>
+            Co-founding this soccer league with my brother and his friend has been one of the most rewarding experiences of my life.
+            It reminded me why we build things in the first place — to serve people, inspire growth, and leave a positive mark.
+          </p>
+          <p>
+            If you’re thinking of starting something — a league, a club, a project — <strong>start small, stay consistent, and grow with your community</strong>. That’s what we did.
+          </p><br>
+
+          <div class="divider rtl"></div>
+          <p>
+            📬 <em>Want to know more about our league or get involved?</em> Feel free to connect with me on 
+            <a href="http://www.linkedin.com/in/burhanuddin-mohammed-1785bb35b" target="_blank">LinkedIn</a> or check out my tech work on 
+            <a href="https://github.com/BMohammed7" target="_blank">GitHub</a>.
+          </p>
+
+
+          <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+          <script src="script.js"></script>
+  </body>
+</html>

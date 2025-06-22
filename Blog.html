@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> <!-- https://ionic.io/ionicons -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@mariohamann/activity-graph/dist/activity-graph.min.js"></script>
+  <title>My First Blog</title>
+
+  </head>
+  <body class="">
+
+      <div class="container">
+
+<!-- ------- Navbar ------- -->
+
+          <nav class="navbar">
+            <div class="box theme">
+              <div class="item" onclick="theme()">
+                <ion-icon id="lightBtn" name="sunny-outline"></ion-icon>
+                <ion-icon id="darkBtn"name="moon-outline" style="display: none;"></ion-icon>
+              </div>
+            </div>
+            <div class="box nav">
+              <div class="item active">
+                <a href="index.html#about">
+                  <ion-icon name="person-circle-outline"></ion-icon>
+                  <p>about</p>
+                  </a>
+                <div class="divider rtl"></div>
+              </div>
+              <div class="item">
+                <a href="index.html#resume ">
+                  <ion-icon name="file-tray-full-outline"></ion-icon>
+                  <p>resume</p>
+                </a>
+                <div class="divider rtl"></div>
+              </div>
+              <div class="item">
+                <a href="index.html#projects">
+                  <ion-icon name="layers-outline"></ion-icon>
+                  <p>projects</p>
+                  </a>
+                <div class="divider rtl"></div>
+              </div>
+              <div class="item ">
+                <a href="index.html#blogs">
+                  <ion-icon name="reader-outline"></ion-icon>
+                  <p>blogs</p>
+                  </a>
+                <div class="divider rtl"></div>
+              </div>
+              <div class="item">
+                <a href="index.html#contact">
+                  <ion-icon name="paper-plane-outline"></ion-icon>
+                  <p>contact</p>
+                  </a>
+                <div class="divider rtl"></div>
+              </div>
+            </div>
+          </nav>
+
+          <!-- ----------- Profile --------- -->
+          
+          <div class="box profile">
+            <img class="header" src="cover.jpg" alt="Cover Image">
+            <img class="img" src="profile.jpeg" alt="Profile Picture">
+            <h2>Burhanuddin Mohammed</h2>
+            <p id="typed" class="colored">Full-Stack Web Developer</p> 
+            <ul>
+              <li><a href="https://github.com/BMohammed7" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
+              <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+              <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+              <li><a href="http://www.linkedin.com/in/burhanuddin-mohammed-1785bb35b" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            </ul>
+            <div class="footer">
+              <div class="divider rtl"></div>
+              <table>
+                <tr>
+                  <td><a href="#">My Resume <ion-icon name="file-tray-full-outline"></ion-icon></a></td>
+                  <td><a href="#contact">Contact Me <ion-icon name="call-outline"></ion-icon></a></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <!-- -------- content -------- -->
+
+          <div class="box content">
+            <div class="wrapper">
+            <h1 id="about">From Bugs <span class="colored">to Breakthroughs!</span></h1>
+            <div class="divider ltr"></div>
+
+            <h2>My Journey as a Software Engineering Student</h2><br>
+
+              <h3>Introduction: Why Software Engineering?</h3>
+              <p>
+                When I first enrolled at <span class="colored">Ontario Tech University,</span> I wasn’t entirely sure what being a software engineer really meant.
+                I knew I liked tech, and I was curious about how the apps and tools we use every day were built.
+                But what I didn’t know was that this journey would push me to think deeper, fail harder, and grow faster than I ever expected.
+              </p>
+              <p>
+                Now, entering my third year, I can say with confidence that <strong>learning to code isn’t just about syntax</strong> — it’s about problem-solving,
+                collaboration, communication, and yes, getting stuck (a lot).
+              </p><br>
+              
+              <h3>The First Real Win: Java Cashier Receipt Printer</h3>
+              <p>
+                One of my first projects that made me feel like a “real” developer was a <strong>Cashier Receipt Printer</strong> built in Java.
+                It required clean object-oriented design, accurate handling of totals, and flexibility for future features.
+              </p>
+              <p>
+                I ran into a bug where totals were miscalculating. It took hours of debugging, but in the process, I learned to trust my tools and logic.
+                That project taught me how important <strong>structure, planning, and debugging</strong> really are.
+              </p><br>
+
+              <h3>Leading a Team: The Soccer League Database System</h3>
+              <p>
+                As team lead for our <strong>Soccer League DBMS</strong> project, I worked with Oracle SQL, shell scripting, and Java GUIs.
+                My biggest role? Bringing the pieces together and leading collaboration.
+              </p>
+              <ul>
+                <li>Normalized the schema to BCNF</li>
+                <li>Built CLI workflows with shell scripts</li>
+                <li>Integrated a GUI for user interaction</li>
+              </ul>
+              <p>
+                The real challenge was integration. This project taught me that <strong>good code is only half the battle — team communication is the other half</strong>.
+              </p><br>
+
+              <h3>Designing for Real People: Restaurant Website</h3>
+              <p>
+                Next came a full-stack <strong>Restaurant Website</strong> using HTML, CSS, JavaScript, and Figma. We also used SQL to manage dynamic content.
+              </p>
+              <p>
+                For the first time, I had to think like a user. Would the layout make sense? Was it mobile-friendly? Could someone find the menu easily?
+              </p>
+              <p>
+                This taught me that <strong>frontend design and backend logic must work hand in hand</strong> — and that user experience (UX) matters as much as the code.
+              </p><br>
+
+              <h3>Beyond Classrooms: Teaching Code at Camp</h3>
+              <p>
+                As a <strong>Camp Coordinator</strong>, I taught Java and C++ to children in my community. This experience helped me:
+              </p>
+              <ul>
+                <li>Communicate clearly and patiently</li>
+                <li>Break down complex concepts for beginners</li>
+                <li>Appreciate the joy of helping others learn</li>
+              </ul>
+              <p>
+                Teaching made me a better developer and gave me a sense of purpose I hadn’t expected.
+              </p><br>
+
+              <h3>Real-World Application: Web Developer Internship</h3>
+              <p>
+                During my internship at <strong>My Homework Rewards</strong>, I helped build and deploy educational content with HTML, CSS, and JavaScript.
+              </p>
+              <p>
+                I got hands-on experience with version control, responsive design, and real-time feedback from users. It made development feel meaningful.
+              </p><br>
+
+              <h3>Key Lessons I’ve Learned (So Far)</h3>
+
+              <h3>✅ 1. Failure is Part of the Process</h3>
+              <p>
+                Every bug and crash taught me something. Failure isn’t the end — it’s part of the path forward.
+              </p>
+
+              <h3>✅ 2. Soft Skills Matter</h3>
+              <p>
+                Collaboration, communication, and project leadership are just as important as technical know-how.
+              </p>
+
+              <h3>✅ 3. Projects Speak Louder Than Grades</h3>
+              <p>
+                Real growth comes from building — not just from passing exams.
+              </p><br>
+
+              <h2>Final Thoughts</h2>
+              <p>
+                My journey so far has been shaped by code, collaboration, and continuous learning.
+                I’ve built, broken, and rebuilt — and I’m just getting started.
+              </p>
+              <p>
+                If you're beginning your own journey, I encourage you: <strong>start building, keep learning, and don’t be afraid to fail</strong>.
+              </p><br>
+
+              <div class="divider rtl"></div>
+              <p>
+                📬 <em>Want to connect?</em> You can find me on <a href="http://www.linkedin.com/in/burhanuddin-mohammed-1785bb35b" target="_blank">LinkedIn</a> or explore my work on <a href="https://github.com/BMohammed7" target="_blank">GitHub</a>.
+              </p>
+
+          </div>
+          </div>
+
+          <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+          <script src="script.js"></script>
+  </body>
+</html>

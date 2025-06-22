@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> <!-- https://ionic.io/ionicons -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@mariohamann/activity-graph/dist/activity-graph.min.js"></script>
+  <title>My Portfolio</title>
+
+  </head>
+  <body class="">
+
+      <div class="container">
+
+<!-- ------- Navbar ------- -->
+
+          <nav class="navbar">
+            <div class="box theme">
+              <div class="item" onclick="theme()">
+                <ion-icon id="lightBtn" name="sunny-outline"></ion-icon>
+                <ion-icon id="darkBtn"name="moon-outline" style="display: none;"></ion-icon>
+              </div>
+            </div>
+            <div class="box nav">
+              <div class="item active">
+                <a href="#about">
+                  <ion-icon name="person-circle-outline"></ion-icon>
+                  <p>about</p>
+                  </a>
+                <div class="divider rtl"></div>
+              </div>
+              <div class="item">
+                <a href="#resume ">
+                  <ion-icon name="file-tray-full-outline"></ion-icon>
+                  <p>resume</p>
+                </a>
+                <div class="divider rtl"></div>
+              </div>
+              <div class="item">
+                <a href="#projects">
+                  <ion-icon name="layers-outline"></ion-icon>
+                  <p>projects</p>
+                  </a>
+                <div class="divider rtl"></div>
+              </div>
+              <div class="item ">
+                <a href="#blogs">
+                  <ion-icon name="reader-outline"></ion-icon>
+                  <p>blogs</p>
+                  </a>
+                <div class="divider rtl"></div>
+              </div>
+              <div class="item">
+                <a href="#contact">
+                  <ion-icon name="paper-plane-outline"></ion-icon>
+                  <p>contact</p>
+                  </a>
+                <div class="divider rtl"></div>
+              </div>
+            </div>
+          </nav>
+
+          <!-- ----------- Profile --------- -->
+          
+          <div class="box profile">
+            <img class="header" src="cover.jpg" alt="Cover Image">
+            <img class="img" src="profile.jpeg" alt="Profile Picture">
+            <h2>Burhanuddin Mohammed</h2>
+            <p id="typed" class="colored">Full-Stack Web Developer</p> 
+            <ul>
+              <li><a href="https://github.com/BMohammed7" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
+              <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+              <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+              <li><a href="http://www.linkedin.com/in/burhanuddin-mohammed-1785bb35b" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            </ul>
+            <div class="footer">
+              <div class="divider rtl"></div>
+              <table>
+                <tr>
+                  <td><a href="#">My Resume <ion-icon name="file-tray-full-outline"></ion-icon></a></td>
+                  <td><a href="#contact">Contact Me <ion-icon name="call-outline"></ion-icon></a></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <!-- -------- content -------- -->
+
+          <div class="box content">
+            <div class="wrapper">
+            <h2 id="about">Hey <span class="colored">there!</span> 👋</h2>
+            <div class="divider ltr"></div>
+            <p>I'm thrilled to tell you a bit about myself! As a Software Engineering student with hands-on experience in <span class="colored">Java, Python, SQL, and full-stack projects,</span> I’ve also held roles like web developer intern and technical lead. If you're looking for a motivated team player, let’s connect!</p>
+            
+            <!-- Achivements -->
+            <section class="achivements">
+              <div>
+                <h3><ion-icon name="layers-outline"></ion-icon>40+</h3>
+                <p>Website Designed</p>
+              </div>
+              <div>
+                <h3><ion-icon name="briefcase-outline"></ion-icon>3+</h3>
+                <p>Years of Experience</p>
+              </div>
+              <div>
+                <h3><ion-icon name="rocket-outline"></ion-icon>30</h3>
+                <p>Completed Projects</p>
+              </div>
+            </section>
+
+            <!-- Skills-->
+
+            <h2>My <span class="colored">Skills</span></h2>
+            <div class="divider ltr"></div>
+
+            <section class="skills">
+              <div><ion-icon name="logo-html5"></ion-icon><p>HTML5</p></div>
+              <div><ion-icon name="logo-css3"></ion-icon><p>CSS</p></div>
+              <div><ion-icon name="logo-react"></ion-icon><p>React</p></div>
+              <div><ion-icon name="logo-python"></ion-icon><p>Python</p></div>
+              <div>
+                <div class="circle" style="--percent:65%">
+                  <h4>65<small>%</small></h4>
+                </div>
+                <p>MySQL</p>
+              </div>
+              <div>
+                <div class="circle" style="--percent:85%">
+                  <h4>85<small>%</small></h4>
+                </div>
+                <p>Full Stack Development</p>
+              </div>
+              <div>
+                <div class="progress-bar">
+                  <p>Java <span>90%</span></p>
+                  <progress value="90" max="100"></progress>
+                </div>
+              <div>
+                <div class="progress-bar">
+                  <p>Node Js <span>75%</span></p>
+                  <progress value="75" max="100"></progress>
+              </div>
+            </section>
+
+            <!-- Experience -->
+
+            <h2 id="resume">My <span class="colored">Experience</span></h2>
+            <div class="divider ltr"></div>
+
+            <section class="experiences">
+              <div class="experience">
+                <h2>Web Developer Intern</h2>
+                <h4>My Homework Rewards <span class="date">Jan, 2025</span> &#x26AC; <span class="date">April, 2025</span></h4>
+                <p>Developed a comprehensive online platform to host and display Data Management notes, utilizing HTML, CSS, and JavaScript to create an intuitive, user-friendly interface. Designed and implemented a responsive website to organize and showcase educational content, ensuring seamless integration into the company's main website. Collaborated with team members for feedback and enhancements, ensuring high-quality, well-organized content delivery for users.</p>
+              </div>
+              <div class="experience">
+                <h2>Technical Lead</h2>
+                <h4>Scarborough Center for Healthy Communities <span class="date">May, 2023</span> &#x26AC; <span class="date">August, 2023</span></h4>
+                <p>Managed all technical operations for an event, overseeing slideshow presentations, microphone setup, and audio/visual equipment to ensure seamless delivery. Coordinated with team members and vendors to troubleshoot and resolve technical issues, minimizing disruptions and ensuring a flawless event experience. Ensured the proper functioning of all equipment and software, conducting pre-event checks and providing on-the-spot solutions during the event.</p>
+              </div>
+              <div class="experience">
+                <h2>Co Founder</h2>
+                <h4>Cornell Football League <span class="date">March, 2024</span> &#x26AC; <span class="date">Present</span></h4>
+                <p>Co-founded and successfully ran a community soccer league for kids and teens (ages 6–17), identifying a local need and organizing all logistics including recruitment, scheduling, and parent communication. Grew the league by 300% in its second year, creating a fun, inclusive environment that promotes teamwork, skill-building, and community engagement. Secured sponsorships and collaborated with local organizations to enhance the experience and expand outreach within the community.</p>
+              </div>
+              <div class="experience">
+                <h2>Camp Counselor</h2>
+                <h4>The Ubuntu Village <span class="date">March, 2023</span> &#x26AC; <span class="date">April, 2023</span></h4>
+                <p>Supervised and guided groups of 12 children and teens (Grades 1–12), ensuring smooth transitions between workshops and maintaining a positive, engaging atmosphere. Organized daily activities, including attendance tracking, lunch supervision, and managing discipline, fostering a safe and structured environment for campers. Led and motivated diverse groups, ensuring all campers participated in activities and adhered to camp rules, promoting teamwork and respect.</p>
+              </div>
+            </section>
+
+            <h2>My <span class="colored">Contributions</span></h2>
+            <div class="divider ltr"></div>
+          
+          <!-- Contributions-->
+            <section class="contribution">
+              <div class="wrapper">
+                <activity-graph
+                  range-start="2021-01-01"
+                  range-end="2021-12-31"
+                  activity-levels="0,1,2,3,5"
+                  activity-data="2021-01-01,2021-01-01,2021-01-01,2021-01-01,2021-01-02,2021-01-02,2021-01-02,2021-01-02,2021-01-02,2021-01-03,2021-01-03,2021-01-03,2021-01-03,2021-01-03,2021-01-04,2021-01-04,2021-01-04,2021-01-04,2021-01-05,2021-01-05,2021-01-05,2021-01-05,2021-01-06,2021-01-06,2021-01-06,2021-01-06,2021-01-06,2021-01-07,2021-01-07,2021-01-07,2021-01-07,2021-01-08,2021-01-08,2021-01-08,2021-01-09,2021-01-09,2021-01-09,2021-01-09,2021-01-09,2021-01-10,2021-01-10,2021-01-10,2021-01-11,2021-01-11,2021-01-11,2021-01-12,2021-01-12,2021-01-12,2021-01-13,2021-01-13,2021-01-14,2021-01-14,2021-01-14,2021-01-14,2021-01-14,2021-01-15,2021-01-15,2021-01-15,2021-01-16,2021-01-16,2021-01-16,2021-01-17,2021-01-17,2021-01-18,2021-01-18,2021-01-18,2021-01-19,2021-01-20,2021-01-20,2021-01-21,2021-01-22,2021-01-22,2021-01-23,2021-01-23,2021-01-24,2021-01-25,2021-01-25,2021-01-26,2021-01-27,2021-01-27,2021-01-28,2021-01-28,2021-01-29,2021-01-29,2021-01-30,2021-01-30,2021-01-31,2021-02-01,2021-02-01,2021-02-02,2021-02-02,2021-02-02,2021-02-03,2021-02-03,2021-02-04,2021-02-05,2021-02-06,2021-02-07,2021-02-08,2021-02-08,2021-02-09,2021-02-10,2021-02-10,2021-02-11,2021-02-12,2021-02-12,2021-02-13,2021-02-14,2021-02-14,2021-02-15,2021-02-16,2021-02-16,2021-02-17,2021-02-18,2021-02-18,2021-02-19,2021-02-19,2021-02-20,2021-02-21,2021-02-22,2021-02-23,2021-02-24,2021-02-25,2021-02-26,2021-02-27,2021-02-28,2021-02-28,2021-03-01,2021-03-01,2021-03-02,2021-03-02,2021-03-03,2021-03-03,2021-03-03,2021-03-04,2021-03-05,2021-03-05,2021-03-06,2021-03-07,2021-03-08,2021-03-09,2021-03-10,2021-03-10,2021-03-11,2021-03-12,2021-03-13,2021-03-13,2021-03-14,2021-03-15,2021-03-15,2021-03-16,2021-03-17,2021-03-18,2021-03-19,2021-03-20,2021-03-20,2021-03-21,2021-03-22,2021-03-23,2021-03-23,2021-03-24,2021-03-24,2021-03-25,2021-03-26,2021-03-27,2021-03-29,2021-03-30,2021-03-31,2021-04-01,2021-04-02,2021-04-03,2021-04-03,2021-04-04,2021-04-05,2021-04-06,2021-04-06,2021-04-07,2021-04-08,2021-04-09,2021-04-10,2021-04-11,2021-04-12,2021-04-12,2021-04-13,2021-04-14,2021-04-14,2021-04-15,2021-04-16,2021-04-16,2021-04-17,2021-04-18,2021-04-19,2021-04-20,2021-04-21,2021-04-21,2021-04-22,2021-04-23,2021-04-24,2021-04-25,2021-04-26,2021-04-27,2021-04-27,2021-04-28,2021-04-29,2021-04-30,2021-05-01,2021-05-04,2021-05-04,2021-05-05,2021-05-06,2021-05-07,2021-05-07,2021-05-08,2021-05-09,2021-05-10,2021-05-11,2021-05-12,2021-05-13,2021-05-13,2021-05-14,2021-05-15,2021-05-16,2021-05-17,2021-05-20,2021-05-20,2021-05-21,2021-05-22,2021-05-23,2021-05-24,2021-05-25,2021-05-25,2021-05-26,2021-05-27,2021-05-28,2021-05-29,2021-05-29,2021-05-30,2021-05-31,2021-06-01,2021-06-01,2021-06-02,2021-06-03,2021-06-03,2021-06-04,2021-06-05,2021-06-06,2021-06-07,2021-06-08,2021-06-08,2021-06-09,2021-06-10,2021-06-11,2021-06-12,2021-06-12,2021-06-13,2021-06-14,2021-06-15,2021-06-16,2021-06-17,2021-06-17,2021-06-18,2021-06-19,2021-06-19,2021-06-20,2021-04-12,2021-04-13,2021-04-14,2021-04-14,2021-04-15,2021-04-16,2021-04-16,2021-04-17,2021-04-18,2021-04-19,2021-04-20,2021-04-21,2021-04-21,2021-04-22,2021-04-23,2021-04-24,2021-04-25,2021-04-26,2021-04-27,2021-04-27,2021-04-28,2021-04-29,2021-04-30,2021-05-01,2021-05-02,2021-05-03,2021-05-04,2021-05-04,2021-05-05,2021-05-06,2021-05-07,2021-05-07,2021-05-08,2021-05-09,2021-05-10,2021-05-11,2021-05-12,2021-05-13,2021-05-13,2021-05-14,2021-05-15,2021-05-16,2021-05-17,2021-05-18,2021-05-19,2021-05-20,2021-05-20,2021-05-21,2021-05-22,2021-05-23,2021-05-24,2021-05-25,2021-05-25,2021-05-26,2021-05-27,2021-05-28,2021-05-29,2021-05-29,2021-05-30,2021-05-31,2021-06-01,2021-06-01,2021-06-02,2021-06-03,2021-06-03,2021-06-04,2021-06-05,2021-06-06,2021-06-07,2021-06-08,2021-06-08,2021-06-09,2021-06-10,2021-06-11,2021-06-12,2021-06-12,2021-06-13,2021-06-14,2021-06-15,2021-06-16,2021-06-17,2021-06-17,2021-06-18,2021-06-19,2021-06-19,2021-06-20,2021-02-18,2021-02-18,2021-02-19,2021-02-19,2021-02-20,2021-02-21,2021-02-22,2021-02-23,2021-02-24,2021-02-25,2021-02-26,2021-02-27,2021-02-27,2021-02-28,2021-02-28,2021-03-01,2021-03-01,2021-03-02,2021-03-02,2021-03-03,2021-03-03,2021-03-03,2021-03-04,2021-03-05,2021-03-05,2021-03-06,2021-03-07,2021-03-07,2021-03-08,2021-03-09,2021-03-10,2021-03-10,2021-03-11,2021-03-12,2021-03-13,2021-03-13,2021-03-14,2021-03-15,2021-03-15,2021-03-16,2021-03-17,2021-03-18,2021-03-19,2021-03-20,2021-03-20,2021-03-21,2021-03-22,2021-03-23,2021-03-23,2021-03-24,2021-03-24,2021-03-25,2021-03-26,2021-03-27,2021-03-28,2021-03-29,2021-03-30,2021-03-31,2021-04-01,,2021-04-03,2021-04-04,2021-04-05,2021-04-06,2021-04-06,2021-04-07,2021-04-08,2021-04-09,2021-04-10,2021-04-11,2021-04-12,2021-04-12,2021-04-13,2021-04-14,2021-04-14,2021-04-15,2021-04-16,2021-04-16,2021-04-17,2021-04-18,2021-04-19,2021-04-20,2021-04-21,2021-04-21,2021-04-22,2021-04-23,2021-04-24,2021-04-25,2021-04-26,2021-04-27,2021-04-27,2021-04-28,2021-04-29,2021-04-30,2021-05-01,2021-05-02,2021-05-03,,2021-05-05,2021-05-06,2021-05-07,2021-05-07,2021-05-08,2021-05-09,2021-05-10,2021-05-11,2021-05-12,2021-05-13,2021-05-13,2021-05-14,2021-05-15,2021-05-16,2021-05-17,2021-05-18,2021-05-19,2021-05-20,2021-05-20,2021-05-21,2021-05-22,2021-05-23,2021-05-24,2021-05-25,2021-05-25,"
+                ></activity-graph>
+              </div>
+            </section>
+
+            <!-- Projects -->
+
+            <h2 id="projects"> My <span class="colored">Projects</span></h2>
+            <div class="divider ltr"></div>
+
+            <section class="projects">
+              <div class="project-1">
+                <img src="project-1.jpg" alt="Cashier Receipt Printer Preview">
+                <h3>Cashier <span class="colored">Receipt </span>Printer</h3>
+              </div>
+              <div class="project-2">
+                <img src="project-2.png" alt="Restaurant Website Preview">
+                <h3>Restaurant <span class="colored">Website</span></h3>
+              </div>
+              <div class="project-3">
+                <img src="project-3.jpg" alt="Soccer League DBMS Preview">
+                <h3>Soccer <span class="colored">League DBMS</span></h3>
+              </div>
+              <div class="project-4">
+                <img src="project-4.png" alt="Library Management System">
+                <h3>Library <span class="colored">Management System</span></h3>
+              </div>
+              <div class="project-5">
+                <img src="project-5.png" alt="Functional Calender">
+                <h3>Interactive <span class="colored">Calender</span></h3>
+              </div>
+              <div class="project-6">
+                <img src="project-6.jpg" alt="Smart Calculator Preview">
+                <h3>Smart <span class="colored">Calculator</span></h3>
+              </div>
+              <div class="project-7">
+                <img src="project-7.png" alt="Personal Portfolio Preview">
+                <h3>Personal <span class="colored">Portfolio</span></h3>
+              </div>
+            </section>
+
+            <!-- Blogs -->
+
+            <h2 id="blogs">My <span class="colored"> Blogs</span></h2>
+            <div class="divider ltr"></div>
+
+            <section class="blogs">
+              <div class="blog-box">
+                <img src="blog-1.jpg" alt="Blog1 Picture">
+                <div>
+                  <h3>From Bugs to Breakthroughs!</h3>
+                  <p>When I first enrolled at Ontario Tech University, I wasn’t entirely sure what being a software engineer really meant. I knew I liked tech, and I was curious about how the apps and tools we use every day were built. But what I didn’t know was ....</p>
+                  <span class="link"><a href="Blog.html">Read More</a><ion-icon name="caret-forward-outline"></ion-icon></span>
+                </div>
+              </div>
+              <div class="blog-box">
+                <img src="blog-2.jpg" alt="Blog2 Picture">
+                <div>
+                  <h3>Applying Engineering Concepts in the Real World</h3>
+                  <p>When I started my Software Engineering journey at Ontario Tech University, most of my time was spent learning theory — from data structures and discrete math to digital systems and ....</p>
+                  <span class="link"><a href="Blog2.html">Read More</a><ion-icon name="caret-forward-outline"></ion-icon></span>
+                </div>
+              </div>
+              <div class="blog-box">
+                <img src="blog-3.jpg" alt="Blog3 Picture">
+                <div>
+                  <h3>My First Internship Experience</h3>
+                  <p>Like many students, I often wondered what working in the tech industry would actually feel like. Would it be stressful? Would I be ready? In January 2025, I got the chance to find out when I joined My Homework Rewards as a Web Developer Intern. This was my first official internship — and while I was nervous, I was more excited to finally apply ....</p>
+                  <span class="link"><a href="Blog3.html">Read More</a><ion-icon name="caret-forward-outline"></ion-icon></span>
+                </div>
+              </div>
+              <div class="blog-box">
+                <img src="blog-4.jpg" alt="Blog4 Picture">
+                <div>
+                  <h3>Co-Founding a Community Soccer League</h3>
+                  <p>Last year, I co-founded something that had nothing to do with lines of code — but everything to do with leadership, teamwork, and giving back. Alongside ....</p>
+                  <span class="link"><a href="Blog4.html">Read More</a><ion-icon name="caret-forward-outline"></ion-icon></span>
+                </div>
+              </div>
+            </section>
+
+            <h2>My <span class="colored">Testimonials</span></h2>
+            <div class="divider ltr"></div>
+            <section class="testimonials">
+              <div class="testimonial-box">
+                <h1>What <span class="colored">Clients Say About Me?</h1>
+              </div>
+              <div class="testimonial-box">
+                <img src="img/testmonial-1.webp" alt="">
+                <span>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </span>
+                <h3>Gabriel Aversano</h3> <i>Founder of My Homework Rewards</i>
+                <p>Thanks to Burhanuddin Mohammed for exceptional work and dedication — it’s truly appreciated!</p>
+              </div>
+              <div class="testimonial-box">
+               <img src="img/testmonial-2.webp" alt="">
+                <span>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </span>
+                <h3>Nicolas Cristiano</h3> <i>Manager at My Homework Rewards</i>
+                <p>I'm glad to hear about the experience you've gained. I’m sure it will open doors to great opportunities in the future!</p> 
+              </div>
+              <div class="testimonial-box">
+               <img src="img/testmonial-3.webp" alt="">
+                <span>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half"></ion-icon>
+                </span>
+                <h3>Hugh Kene</h3> <i>VR/Tech Instructor at TUV</i>
+                <p>He’s one of the hardest-working guys I know, always putting in the effort no matter what. You can count on him to crush anything that comes his way!</p> 
+              </div>
+            </section>
+
+            <!-- Contact -->
+
+            <h2 id="contact">Contact <span class="colored">Me</span></h2>
+            <div class="divider ltr"></div>
+
+            <section>
+              <iframe class="map" width="100%" height="300" frameborder="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2872.663049899893!2d-78.89936152414387!3d43.94564663346767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d51b9a6af8ae7f%3A0x2a373a19593716f5!2sOntario%20Tech%20University!5e0!3m2!1sen!2sca!4v1750451392334!5m2!1sen!2sca" frameborder="0"></iframe>
+
+              <form action="" class="contact">
+                <div>
+                  <input type="text" class="input" name="firstname" placeholder="Your Name...">
+                </div>
+                <div>
+                  <input type="text" class="input" name="lastname" placeholder="Your Last Name...">
+                </div>
+                <div>
+                  <input type="email" class="input" name="email" placeholder="Your Email Address...">
+                </div>
+                <div>
+                  <textarea class="input" rows="4" name="subject" placeholder="Write Something..."></textarea>
+                </div>
+                <div>
+                  <button type="submit" class="submit">SEND</button>
+                </div>
+              </form>
+            </section>
+
+          </div>
+          </div>
+
+          <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+          <script src="script.js"></script>
+  </body>
+</html>

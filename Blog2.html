@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> <!-- https://ionic.io/ionicons -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@mariohamann/activity-graph/dist/activity-graph.min.js"></script>
+  <title>My Second Blog</title>
+
+  </head>
+  <body class="">
+
+      <div class="container">
+
+<!-- ------- Navbar ------- -->
+
+          <nav class="navbar">
+            <div class="box theme">
+              <div class="item" onclick="theme()">
+                <ion-icon id="lightBtn" name="sunny-outline"></ion-icon>
+                <ion-icon id="darkBtn"name="moon-outline" style="display: none;"></ion-icon>
+              </div>
+            </div>
+            <div class="box nav">
+              <div class="item active">
+                <a href="index.html#about">
+                  <ion-icon name="person-circle-outline"></ion-icon>
+                  <p>about</p>
+                  </a>
+                <div class="divider rtl"></div>
+              </div>
+              <div class="item">
+                <a href="index.html#resume ">
+                  <ion-icon name="file-tray-full-outline"></ion-icon>
+                  <p>resume</p>
+                </a>
+                <div class="divider rtl"></div>
+              </div>
+              <div class="item">
+                <a href="index.html#projects">
+                  <ion-icon name="layers-outline"></ion-icon>
+                  <p>projects</p>
+                  </a>
+                <div class="divider rtl"></div>
+              </div>
+              <div class="item ">
+                <a href="index.html#blogs">
+                  <ion-icon name="reader-outline"></ion-icon>
+                  <p>blogs</p>
+                  </a>
+                <div class="divider rtl"></div>
+              </div>
+              <div class="item">
+                <a href="index.html#contact">
+                  <ion-icon name="paper-plane-outline"></ion-icon>
+                  <p>contact</p>
+                  </a>
+                <div class="divider rtl"></div>
+              </div>
+            </div>
+          </nav>
+
+          <!-- ----------- Profile --------- -->
+          
+          <div class="box profile">
+            <img class="header" src="cover.jpg" alt="Cover Image">
+            <img class="img" src="profile.jpeg" alt="Profile Picture">
+            <h2>Burhanuddin Mohammed</h2>
+            <p id="typed" class="colored">Full-Stack Web Developer</p> 
+            <ul>
+              <li><a href="https://github.com/BMohammed7" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
+              <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+              <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+              <li><a href="http://www.linkedin.com/in/burhanuddin-mohammed-1785bb35b" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            </ul>
+            <div class="footer">
+              <div class="divider rtl"></div>
+              <table>
+                <tr>
+                  <td><a href="#">My Resume <ion-icon name="file-tray-full-outline"></ion-icon></a></td>
+                  <td><a href="#contact">Contact Me <ion-icon name="call-outline"></ion-icon></a></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <!-- -------- content -------- -->
+
+          <div class="box content">
+            <div class="wrapper">
+            <h1 id="about">Bridging the Gap: <span class="colored">From Theory to Practice</span></h1>
+          <div class="divider ltr"></div>
+
+          <h2>Applying Engineering Concepts in the Real World</h2><br>
+
+          <h3>Introduction: Beyond the Classroom</h3>
+          <p>
+            When I started my Software Engineering journey at <span class="colored">Ontario Tech University</span>, most of my time was spent learning theory — from data structures and discrete math to digital systems and architecture. 
+            While important, I kept asking myself: <em>When will I actually use this?</em>
+          </p>
+          <p>
+            It wasn’t until I started building real projects, working with teams, and stepping into internships that I understood how theory transforms into practical engineering solutions. 
+            This blog reflects how I’ve learned to apply abstract concepts to solve real problems — and how that has shaped the way I think as an engineer.
+          </p><br>
+
+          <h3>Building the Foundation: Cashier Receipt Printer</h3>
+          <p>
+            The first project where theory met reality was my <strong>Cashier Receipt Printer</strong> built in Java using OOP principles. 
+            It may sound simple — calculate totals and print receipts — but the process taught me more than I expected.
+          </p>
+          <p>
+            I used inheritance and encapsulation to keep the code clean and modular. I also had to account for edge cases like tax rounding errors and item-based discounts.
+            When a bug caused totals to miscalculate, I spent hours tracing method calls. That experience helped me understand the <strong>importance of planning and debugging — not just coding.</strong>
+          </p><br>
+
+          <h3>Engineering in Action: Library Management System</h3>
+          <p>
+            Next came the <strong>Library Management System</strong>, a group project where we used <strong>HashMaps and Binary Trees</strong> to build a book search and lending system.
+            Here, my biggest takeaway wasn’t technical — it was learning to think like a software engineer:
+          </p>
+          <ul>
+            <li>How do we optimize search efficiency?</li>
+            <li>What data structure fits the use case best?</li>
+            <li>How do we collaborate without breaking the build?</li>
+          </ul>
+          <p>
+            I contributed core features, worked through merge conflicts, and presented the final product. 
+            I began to understand that <strong>software engineering is equal parts logic, design, and collaboration.</strong>
+          </p><br>
+
+          <h3>Design Meets Function: Restaurant Website</h3>
+          <p>
+            My favorite full-stack project was the <strong>Restaurant Website</strong>, built using HTML, CSS, JavaScript, SQL, and Figma. 
+            For the first time, I wasn’t just thinking like a developer — I had to think like a user.
+          </p>
+          <p>
+            I collaborated on designing a responsive UI in Figma and coded interactive front-end elements. 
+            We added a SQL-backed database for storing dynamic menu content and customer reviews.
+          </p>
+          <p>
+            This project taught me that <strong>good software isn’t just functional — it must be accessible, intuitive, and responsive.</strong>
+          </p><br>
+
+          <h3>Teaching Code, Learning Empathy: Programming Camp</h3>
+          <p>
+            During the summer, I coordinated a two-week <strong>Programming Camp</strong> where I taught C++ and Java to local youth.
+            This wasn’t just about syntax — it was about breaking down logic for students seeing code for the first time.
+          </p>
+          <ul>
+            <li>I simplified concepts using real-life analogies</li>
+            <li>Guided students through small projects and debugging</li>
+            <li>Encouraged creativity in how they solved problems</li>
+          </ul>
+          <p>
+            Teaching taught me more than I expected — especially patience and clarity. 
+            It also showed me how much I had grown — from learning code to helping others build it.
+          </p><br>
+
+          <h3>Stepping Into the Industry: Internship Experience</h3>
+          <p>
+            At <strong>My Homework Rewards</strong>, I worked as a Web Developer Intern, building an educational notes platform.
+          </p>
+          <p>
+            I used responsive design techniques with HTML, CSS, and JavaScript, and collaborated with the content team to organize notes in a clean UI.
+            We constantly tested layouts, received feedback from users, and made improvements in sprints.
+          </p>
+          <p>
+            It was my first time applying concepts like <strong>version control, component design, and deployment</strong> in a real business environment — and it confirmed that this is exactly the kind of work I want to keep doing.
+          </p><br>
+
+          <h3>Core Lessons from My Journey</h3>
+
+          <h3>✅ 1. Theory is the Toolkit</h3>
+          <p>
+            Concepts like recursion, trees, and normalization seemed abstract until I applied them in real projects. Now, I see theory as my toolkit for solving practical problems.
+          </p>
+
+          <h3>✅ 2. Communication Is a Core Skill</h3>
+          <p>
+            Whether I’m leading a team or collaborating in a sprint, the ability to explain ideas clearly is just as important as writing efficient code.
+          </p>
+
+          <h3>✅ 3. Learn by Doing</h3>
+          <p>
+            Every internship, group project, and personal build has taught me something lectures never could. 
+            <strong>Action builds experience. Mistakes build confidence.</strong>
+          </p><br>
+
+          <h2>Looking Ahead</h2>
+          <p>
+            As I enter third year, I’m excited to explore systems programming, backend optimization, and real-time infrastructure.
+          </p>
+          <p>
+            My goal is simple: <strong>keep learning by solving real problems with smart code.</strong>
+          </p><br>
+
+          <div class="divider rtl"></div>
+          <p>
+            📬 <em>Let’s connect!</em> You can find me on <a href="http://www.linkedin.com/in/burhanuddin-mohammed-1785bb35b" target="_blank">LinkedIn</a> or view my latest work on <a href="https://github.com/BMohammed7" target="_blank">GitHub</a>.
+          </p>
+
+
+          <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+          <script src="script.js"></script>
+  </body>
+</html>
